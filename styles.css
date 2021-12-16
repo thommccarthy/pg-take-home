@@ -1,0 +1,198 @@
+body {
+  font-family: Helvetica;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 7em;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  padding-top: 0.5em;
+}
+
+h2 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+li {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+nav {
+  width: 100%;
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+img {
+  width: 100%;
+}
+
+nav img {
+  width: 100%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.burger {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 2.2em;
+}
+
+.logo {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  margin: auto auto;
+  width: 6.2em;
+}
+
+.cart {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 6.2em;
+}
+
+button {
+  display: block;
+  position: fixed;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  background: #db8669;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: white;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  border: none;
+}
+
+section article {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.freeOfferGrid {
+  display: grid;
+}
+
+.minnowWrapper {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(128, 128, 128, 0.164);
+  text-align: center;
+  max-width: 1200px;
+  margin-top: 2em;
+  margin-bottom: 0;
+  padding-bottom: 3em;
+}
+
+.ourTreat {
+  display: block;
+  position: relative;
+  font-weight: bold;
+  font-size: 1.4em;
+  margin: auto auto;
+  text-align: center;
+  padding-top: 3em;
+  margin-bottom: 0;
+}
+
+.minnowBagTwo {
+  display: none;
+}
+
+.minnowBagImage {
+  margin-top: -2em;
+}
+
+.memberArticle {
+  margin: auto auto;
+}
+
+.memberArticle li {
+  padding: 0.5em;
+}
+
+.petApproved {
+  font-size: 1.6em;
+  margin-bottom: 1.6em;
+}
+
+@media screen and (min-width: 900px) {
+  .freeOfferGrid {
+    display: grid;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .memberGrid {
+    display: grid;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .minnowGrid {
+    display: grid;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .minnowBagTwo {
+    display: block;
+  }
+
+  .greyCat {
+    grid-area: 1/2/2/3;
+  }
+
+  .freeOfferArticle {
+    grid-column-start: 1;
+  }
+
+  button {
+    position: relative;
+    margin-top: 2em;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+  }
+}
