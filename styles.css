@@ -78,6 +78,7 @@ nav img {
 
 button {
   display: block;
+  z-index: 99;
   position: fixed;
   cursor: pointer;
   margin-left: auto;
